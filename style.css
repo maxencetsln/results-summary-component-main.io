@@ -1,0 +1,191 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: hsl(221, 100%, 96%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 2em;
+    width: 600px;
+    box-shadow: 5px 5px 5px hsl(222.2, 100%, 92.7%);
+}
+
+.leftSide {
+    background: linear-gradient(0deg, hsla(256, 72%, 46%, 1) 0%, hsl(252, 100%, 67%) 100%);
+    border-radius: 2em;
+    width: 50%;
+    padding: 15px;
+}
+
+.globalScore {
+    background: linear-gradient(0deg, hsla(241, 72%, 46%, 0) 0%, hsla(256, 72%, 46%, 1) 100%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.result {
+    text-align: center;
+    color: lightgrey;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 20px 0 20px 0px;
+}
+.score, .scoreEnd, .result, .review, p {
+    text-align: center;
+}
+
+.score, .review {
+    color: white;
+    font-weight: 900;
+}
+
+.review {
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.score {
+    font-size: 50px;
+    position: relative;
+    top: 25%;
+}
+
+.scoreEnd {
+    color: lightgrey;
+    position: relative;
+    top: 25%;
+}
+
+p {
+    color: lightgrey;
+}
+
+.rightSide {
+    width: 50%;
+    padding: 25px;
+}
+
+.summary {
+    margin: 10px 0 25px 0;
+    font-size: 25px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.253);
+    border-radius: 0.5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 100%, 67%);
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+}
+
+.scoreReview {
+    color: hsl(0, 0%, 67%);
+    font-weight: 700;
+}
+
+span {
+   color: hsl(224, 30%, 27%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.253);
+    border-radius: 0.5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(39, 100%, 56%);
+    margin-bottom: 15px;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.253);
+    border-radius: 0.5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(166, 100%, 37%);
+    margin-bottom: 15px;
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.253);
+    border-radius: 0.5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(234, 85%, 45%);
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 2em;
+    color: white;
+    font-weight: 900;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    margin: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(0deg, hsla(256, 72%, 46%, 1) 0%, hsl(252, 100%, 67%) 100%);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 900px) {
+    body {
+        margin: 0;
+    }
+    main {
+      display: block;
+    }
+    .card {
+        display: block;
+        width: 100%;
+    }
+    .rightSide {
+        width: 85%;
+    }
+    .leftSide {
+        padding: 0px;
+        width: 100%;
+        border-radius: 0% 0% 10% 10%;
+    }
+    .result {
+        padding-top: 15px;
+        margin-top: 0px;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+    }
+    p {
+        padding: 0 15px 15px 15px;
+        margin-bottom: 0px;
+    }
+  }
